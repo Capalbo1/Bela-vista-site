@@ -60,7 +60,7 @@ section {
 
 /* Seção Principal */
 .hero {
-    background: url('/assets/pexels-reneterp-334978\ \(1\).jpg') no-repeat center center/cover;
+    background: url('/Bela-vista-site/assets/fundo.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
