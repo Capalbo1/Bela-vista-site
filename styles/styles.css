@@ -1,0 +1,177 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho */
+/* Cabeçalho */
+header {
+    background-color: #2c5f2d;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;         /* Fixa na parte superior da tela */
+    width: 100%;    /* Garante que o cabeçalho ocupe toda a largura */
+    z-index: 1000;  /* Garante que o header fique sobre outros elementos */
+}
+
+
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+section {
+    height: 100vh;  /* Ocupa 100% da altura da tela */
+    scroll-margin-top: 30px; 
+}
+
+/* Seção Principal */
+.hero {
+    background: url('/assets/pexels-reneterp-334978\ \(1\).jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px; /* Adiciona espaço extra na parte inferior */
+}
+
+/* Ajuste para os textos dentro da seção hero */
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Adiciona um pouco de espaço acima do h2 */
+}
+
+.hero p {
+    margin-bottom: 30px; /* Ajusta o espaçamento entre o h2 e o parágrafo */
+}
+
+.hero .cta-btn {
+    background-color: #2c5f2d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px; /* Espaçamento entre o parágrafo e o botão */
+}
+
+.hero .cta-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Seção de Serviços */
+.services-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* Sobre nós */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seção de Contato */
+.contact-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact-section button {
+    background-color: #2c5f2d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #388e3c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

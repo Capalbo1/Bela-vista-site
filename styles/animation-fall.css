@@ -1,0 +1,35 @@
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('/assets/folha.png');
+    background-size: cover;
+    opacity: 0.9;
+    animation: fall 7s linear infinite, zigzag 3s ease-in-out infinite;
+    pointer-events: none; /* Desabilita a interação com as folhas */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(120vh) rotate(360deg); /* Folha desce fora da tela (120vh) */
+        opacity: 0; /* Folha some ao final */
+    }
+}
+
+@keyframes zigzag {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px); /* Limita o movimento horizontal para evitar que a folha saia da tela */
+    }
+}
+
+/* Evita que a página seja arrastada */
+html, body {
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
